@@ -56,8 +56,8 @@ Cannoneer.prototype.sendMessage = function(id, byte1, byte2, byte3, byte4, byte5
 		}
 	}
 
-	// console.log('Cannoneer sending:', msg.id.toString(16).toUpperCase(), msg.data);
-	console.log('Cannoneer sending:', msg);
+	console.log('Cannoneer sending:', msg.id.toString(16).toUpperCase(), msg.data);
+	//console.log('Cannoneer sending:', msg);
 	this.channel.send(msg);
 }
 
